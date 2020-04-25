@@ -1,0 +1,323 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+header {
+  opacity: 0.9;
+  height: 70px;
+  width: 100%;
+  background-color: whitesmoke;
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header-logo {
+  float: left;
+}
+
+.logo {
+  height: 70px;
+}
+
+.header-list {
+  float: right;
+}
+
+.header-list a {
+  line-height: 70px;
+  padding: 0 20px;
+  color: black;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-list a:hover {
+  color: burlywood;
+  /*font-size: 18px;*/
+}
+
+.menu-icon {
+  color: whitesmoke;
+  float: right;
+  padding: 27px 10px 0 0;
+  display:none;
+}
+
+.top-wrapper {
+  padding: 150px 0 150px 0;
+  background-image:url('image/wall.jpg');
+  background-size: cover;
+  color: white;
+}
+
+.top-wrapper h1 {
+  opacity: 0.9;
+  font-size: 42px;
+  letter-spacing: 2px;
+  text-shadow: -1px 0 rgb(80, 75, 75), 0 1px rgb(80, 75, 75), 1px 0 rgb(80, 75, 75), 0 -1px rgb(80, 75, 75);
+}
+
+.top-wrapper h2 {
+  opacity: 0.9;
+  font-size: 30px;
+  letter-spacing: 1px; 
+  
+}
+
+.top-wrapper p {
+  opacity: 0.9;
+  width: 36%;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+.top-wrapper a {
+  color: white;
+  }
+
+.top-btn {
+	display: inline-block;
+	font-size: 12px;
+  margin-top: 20px;
+	padding: 15px 25px;
+	color: #fff;
+	line-height: normal;
+	border: 2px solid #fff;
+  transition: all 0.5s;
+  border-radius: 3px;
+}
+
+.top-btn i {
+	font-size: 14px;
+	margin-left: 4px;
+}
+
+.top-btn:hover {
+	color: black;
+  background:white; 
+}
+
+.fadeIn {
+  position: relative;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; right: 1000px;}
+  to {opacity: 0.9; right: 0px;}
+}
+
+.fadeInP {
+  position: relative;
+  animation-name: fadeInP;
+  animation-duration: 3s;
+}
+
+@keyframes fadeInP {
+  from {opacity: 0; right: 1000px;}
+  to {opacity: 0.9; right: 0px;}
+}
+
+.fadeInB {
+  animation-name: fadeInB;
+  animation-duration: 5s;
+}
+
+@keyframes fadeInB {
+  from {opacity: 0; }
+  to {opacity: 1; }
+}
+
+/* ----- Batas ----- */
+
+
+@keyframes fadeInP {
+  from {opacity: 0; right: 1000px;}
+  to {opacity: 0.9; right: 0px;}
+}
+
+
+
+.lesson-wrapper {
+  height: 450px;
+  background:url(/image/extra.jpg);
+  opacity:0.8;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.video-wrapper h2{
+  text-align:left;
+  margin-top:10px;
+  border-bottom: 3px solid grey;
+  width:300px;
+}
+
+.video-wrapper video {
+  margin-left:15%;
+}
+
+.video-wrapper p{
+  text-align:center;
+  margin-top:25px;
+}
+
+.testi-wrapper h2{
+  text-align:left;
+  margin:10px 0px;
+  border-bottom: 3px solid grey;
+  width:150px;
+
+}
+
+.testi-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.gambar img {
+margin-top:50px;
+}
+
+.name {
+  text:10px;
+}
+.address{
+  padding:0px 0px;
+}
+.lesson {
+  float: left;
+  width: 30%;
+  bottom:50%;
+  top : 30px
+}
+
+.lesson-icon {
+  position: relative;
+  top :30%;
+ 
+  
+}
+
+
+.lesson-icon p {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  color: cyan;
+    font-size:15px;
+    display: block;
+  transition: all 0.5s;
+}
+.lesson-icon a{
+ position: absolute;
+ color: cyan;
+ opacity:0.7;
+ top:60%;
+display:inline-block; 
+}
+
+
+.lesson-icon p:hover{
+    color: hotpink;
+    font-size:20px;
+  }
+  
+  
+  
+
+.lesson-icon a:hover{
+      color:hotpink;
+     font-size:30px
+    
+ 
+}
+  
+img{
+  animation-name: fadeInP;
+  animation-duration: 3s;
+  border-radius: 50%;
+  vertikal-align: midle;
+  border-style:none;
+}
+
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 10px;
+  color:white;
+
+}
+
+.contact-form {
+  padding: 20px 0px;
+  background: url(https://floorsplus.ca/wp-content/uploads/2014/04/contact-info-background.png) no-repeat 0px 0px;
+  background-size: cover;
+  min-height: 500px;
+  margin-top: 40px;
+}
+
+.contact-form h3 {
+  font-size: 42px;
+  font-weight: 400px;
+  text-align:center;
+  padding-bottom:10px;
+  padding-right: 150px;
+  color:rgb(245, 254, 255);
+  display:block;
+  font-family: Poppins, sans-serif;
+  letter-spacing: 2px;
+  line-height: 46px;
+  margin-block-end: 10px;
+  margin-block-start: 20px;
+  margin-bottom: 10px;
+  float:right;
+}
+
+
+
+
+.footer-info {
+  padding: 30px 0;
+  margin:20px 0 0 0;
+  font-size: 15px;
+  text-align:center;
+  background-color: whitesmoke;
+  
+}
