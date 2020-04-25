@@ -262,20 +262,29 @@ header {
   flex: auto;
   width: 20%;
   position: relative;
+  margin-bottom: 15px;
 }
 
 .team-content p {
   color: #5f5d60;
+  margin: 10px 0px;
 }
 
 .team-content a {
   color: #5f5d60;
   transition: all 0.5s;
-  padding: 0 2px;
+  display: inline-block;
+  background: transparent;
+  padding: 8px 0;
+  border-radius: 50%;
+  width: 36px;
+  transition: 0.3s;
+  border: 1px solid brown;
 }
 
 .team-content a:hover {
   color: brown;
+  background-color: whitesmoke;
 }
 
 /* ------------------------- Batas Tim ------------------------- */
@@ -328,7 +337,7 @@ input, textarea {
   cursor: pointer;
 }
 
-/* ----------------------- Batas Form ----------------------- */
+/* ------------------------ Batas Form ------------------------ */
 
 .footer {
   background-color: whitesmoke;
