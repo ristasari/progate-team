@@ -3,8 +3,21 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: "Lucida Grande";
+}
+
+.section-header h2 {
+  color: #5f5d60;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  
+}
+
+.clear {
+  clear: left;
 }
 
 a {
@@ -46,7 +59,7 @@ header {
 
 .header-list a {
   line-height: 70px;
-  padding: 0 20px;
+  padding: 0 15px;
   color: black;
   display: block;
   float: left;
@@ -55,7 +68,6 @@ header {
 
 .header-list a:hover {
   color: burlywood;
-  /*font-size: 18px;*/
 }
 
 .menu-icon {
@@ -66,7 +78,7 @@ header {
 }
 
 .top-wrapper {
-  padding: 150px 0 150px 0;
+  padding: 155px 0;
   background-image:url('image/wall.jpg');
   background-size: cover;
   color: white;
@@ -83,7 +95,6 @@ header {
   opacity: 0.9;
   font-size: 30px;
   letter-spacing: 1px; 
-  
 }
 
 .top-wrapper p {
@@ -151,173 +162,182 @@ header {
   to {opacity: 1; }
 }
 
-/* ----- Batas ----- */
+/* ------------------------- Batas Header ------------------------- */
 
-
-@keyframes fadeInP {
-  from {opacity: 0; right: 1000px;}
-  to {opacity: 0.9; right: 0px;}
+.video-wrapper {
+  background-color: antiquewhite;
+  padding: 50px 0px;
 }
 
-
-
-.lesson-wrapper {
-  height: 450px;
-  background:url(/image/extra.jpg);
-  opacity:0.8;
+.videos {
   text-align: center;
-}
-
-.heading {
-  padding-top: 30px;
-  padding-bottom: 40px;
   color: #5f5d60;
 }
 
-.heading h2 {
-  font-weight: normal;
+.video {
+	border: 2px solid black;
+  border-radius: 3px;
+  width: 50%;
 }
 
-.video-wrapper h2{
-  text-align:left;
-  margin-top:10px;
-  border-bottom: 3px solid grey;
-  width:300px;
+.videos p {
+  padding-top: 20px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  line-height: 22px;
 }
 
-.video-wrapper video {
-  margin-left:15%;
-}
-
-.video-wrapper p{
-  text-align:center;
-  margin-top:25px;
-}
-
-.testi-wrapper h2{
-  text-align:left;
-  margin:10px 0px;
-  border-bottom: 3px solid grey;
-  width:150px;
-
-}
+/* ------------------------- Batas Video ------------------------- */
 
 .testi-wrapper {
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
+  background-color: wheat;
+  padding: 50px 0px;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+.testi {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.testimonial-item {
+  width: 50%;
+  flex: auto;
+  /* float: left; */
+  padding: 10px 20px;
+}
+
+  .testimonial-img {
+    border-radius: 3%; 
+    border: 1px solid black;
+    float: left;
+    width: 120px;
+    margin-top: 15px;
+  }
+
+.testimonial-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #111;
+  margin-left: 140px;
+}
+
+.testimonial-item h4 {
+  font-size: 14px;
+  color: #5f5d60;
+  margin: 0 0 15px 0;
+  margin-left: 140px;
+}
+
+.testimonial-item p {
+  font-style: italic;
+  margin: 0 0 15px 140px;
+  text-align: justify;
+  font-size: 14px;
+}
+
+/* ------------------------- Batas Testimoni ------------------------- */
+
+.team-wrapper {
+  background-color: antiquewhite;
+  padding: 50px 0px;
   text-align: center;
 }
 
-.gambar img {
-margin-top:50px;
+.team {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.name {
-  text:10px;
-}
-.address{
-  padding:0px 0px;
-}
-.lesson {
-  float: left;
-  width: 30%;
-  bottom:50%;
-  top : 30px
-}
-
-.lesson-icon {
-  position: relative;
-  top :30%;
- 
-  
-}
-
-
-.lesson-icon p {
-  position: absolute;
-  top: 30%;
-  width: 100%;
-  color: cyan;
-    font-size:15px;
-    display: block;
-  transition: all 0.5s;
-}
-.lesson-icon a{
- position: absolute;
- color: cyan;
- opacity:0.7;
- top:60%;
-display:inline-block; 
-}
-
-
-.lesson-icon p:hover{
-    color: hotpink;
-    font-size:20px;
-  }
-  
-  
-  
-
-.lesson-icon a:hover{
-      color:hotpink;
-     font-size:30px
-    
- 
-}
-  
-img{
-  animation-name: fadeInP;
-  animation-duration: 3s;
+.team-img {
+  width: 180px;
   border-radius: 50%;
-  vertikal-align: midle;
-  border-style:none;
+  transition: all 0.5s;
+  border: 1px solid brown;
 }
 
-.text-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 20px;
-  font-size: 10px;
-  color:white;
+.team-icon {
+  /* float: left; */
+  flex: auto;
+  width: 20%;
+  position: relative;
+}
 
+.team-content p {
+  color: #5f5d60;
+}
+
+.team-content a {
+  color: #5f5d60;
+  transition: all 0.5s;
+  padding: 0 2px;
+}
+
+.team-content a:hover {
+  color: brown;
+}
+
+/* ------------------------- Batas Tim ------------------------- */
+
+.contact-wrapper{
+  background-color: wheat;
+  padding: 50px 0px;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-map {
+  /* float: left; */
+  flex: auto;
+  width: 50%;
+  text-align: center;
 }
 
 .contact-form {
-  padding: 20px 0px;
-  background: url(https://floorsplus.ca/wp-content/uploads/2014/04/contact-info-background.png) no-repeat 0px 0px;
-  background-size: cover;
-  min-height: 500px;
-  margin-top: 40px;
+  /* float: right; */
+  width: 50%;
+  text-align: center;
 }
 
-.contact-form h3 {
-  font-size: 42px;
-  font-weight: 400px;
-  text-align:center;
-  padding-bottom:10px;
-  padding-right: 150px;
-  color:rgb(245, 254, 255);
-  display:block;
-  font-family: Poppins, sans-serif;
-  letter-spacing: 2px;
-  line-height: 46px;
-  margin-block-end: 10px;
-  margin-block-start: 20px;
-  margin-bottom: 10px;
-  float:right;
+input, textarea {
+    width:80%;
+    margin-bottom: 15px;
+    padding:10px;
+    font-size:16px;
+    border:1px solid #dee7ec;
 }
 
+.contact-btn {
+  width: 30%;
+  /* background-color: #007bff; */
+  background-color: chocolate;
+  border: 0;
+  border-radius: 20px;
+  padding: 10px 10px;
+  color: #fff;
+  transition: 0.3s;
+}
 
+.contact-btn:hover {
+  background-color: coral;
+  cursor: pointer;
+}
 
+/* ------------------------ Batas Form ------------------------ */
 
-.footer-info {
-  padding: 30px 0;
-  margin:20px 0 0 0;
-  font-size: 15px;
+.footer {
+  background-color: whitesmoke;
+  padding: 10px 0px;
+}
+
+.footer p {
+  padding: 10px 0px;  
+  font-size: 14px;
   text-align:center;
   background-color: whitesmoke;
-  
 }
